@@ -42,7 +42,7 @@ const Home = () => {
         />
       </div>
       <button className='home-button'>
-        <Link to="./about">Get Started!</Link>
+        <Link to="/about">Get Started!</Link>
       </button>
             <VideoWelcomeModal videoUrl={myVideoUrl} />
 
