@@ -145,15 +145,38 @@
 
 }
 
-.about video {
+.sphere h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: #161616;
+}
+
+.sphere p {
+  font-size: 1.1em;
+  color: #161616;
+  line-height: 1.6;
+  text-wrap: wrap;
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.about button {
+  margin: auto;
+}
+
+.about iframe {
+  background-color: #000000;
   width: auto;
   max-width: 95%;
   max-height: 50%;
   height: auto;
   margin: auto;
   margin-top: 0;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   border-radius: 12px;
+  border: 2px solid #eb0f0f;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
    }
 
 
@@ -163,7 +186,7 @@
     height: auto;
     margin: auto;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     
     font-size: 1.1em;
     color: #161616;

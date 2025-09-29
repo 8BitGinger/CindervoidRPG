@@ -3,6 +3,8 @@ import '../assets/styles/modal.css'; // Import the CSS file
 
 const FIRST_VISIT_KEY = 'website_first_visit';
 
+
+
 const VideoWelcomeModal = ({ videoUrl }) => {
   // State to control modal visibility
   const [isOpen, setIsOpen] = useState(false);

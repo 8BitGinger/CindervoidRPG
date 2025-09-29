@@ -1,11 +1,5 @@
 import React from 'react'
-import aboutVid from '../assets/videos/about.mp4';
-import creatorVid from '../assets/videos/CreatorMessage.mp4';
-import raceSlideshow from '../assets/videos/RaceSlideshow.mp4';
-import cornerstones from '../assets/videos/cornerstones.mp4';
-import essence from '../assets/videos/essence.mp4';
-import spark from '../assets/videos/spark.mp4';
-import attunements from '../assets/videos/attunements.mp4';
+
 import { motion } from 'framer-motion';
 import { fadeIn } from '../Utils/variants';
 
@@ -15,6 +9,8 @@ const About = () => {
 
     >
       <h1>About Cindervoid</h1>
+
+
       <motion.p
             variants={fadeIn('up', 0.2)}
       initial="hidden"
@@ -22,25 +18,18 @@ const About = () => {
       viewport={{ once: false, amount: 0.2 }}>
         Cindervoid is a dynamic Tabletop Role-Playing Game built for maximum action and minimal downtime. Get to the good stuff faster with Quick Character Building, dive into intense scenarios with Fast-Paced Gameplay, and lose yourself in Immersive Storytelling. Our mission is to build a roaring community of Keepers and adventurers. Join us on our video podcast as we showcase the system in action—that’s where your next adventure begins!
       </motion.p>
-      <video className="about-video" controls
 
-      >
-        <source src={aboutVid} type="video/mp4" loading="lazy"/>
-        Your browser does not support the video tag.
-      </video>
-      <button className='about-button'
 
-      >
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ppx2Wa5c5hE?si=33--TaxccYSsVKJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      
+      <button className='about-button'>
         <a href="./contact">Want to be a player?</a>
       </button>
 
-            <h1>Message from the Creator</h1>
-            <video className="about-video" controls loading="lazy">
+      <h1>Message from the Creator</h1>
 
-      
-        <source src={creatorVid} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/NHONt-1fmdY?si=llrSbuEGnUtyi8wI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
             <button className='about-button'
 
@@ -49,47 +38,23 @@ const About = () => {
       </button>
 
       <h1>4 Cornerstones of a Hero</h1>
-      <video className="about-video" controls loading="lazy">
-
-
-        <source src={cornerstones} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/14SupFtb4ZQ?si=b-q6lATjWE-_jMIB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
       <h1>Bloodlines</h1>
-      <video className="about-video" controls loading="lazy">
-
-
-        <source src={raceSlideshow} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/JhjsEFQKXzU?si=RIc5hIZ5GOsW9Dn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
             <h1>Essence</h1>
-      <video className="about-video" controls loading="lazy">
-
-
-        <source src={essence} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/14SupFtb4ZQ?si=b-q6lATjWE-_jMIB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
                   <h1>Spark</h1>
-      <video className="about-video" controls loading="lazy">
-
-
-        <source src={spark} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/PwPdfetbE9s?si=BynsCrfd89iIg47z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
       <h1>Attunements</h1>
-      <video className="about-video" controls loading="lazy">
-
-        <source src={attunements} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/oxJh1uzLe4U?si=8tb0y_qCfoxD7Ze6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     </section>
   )
