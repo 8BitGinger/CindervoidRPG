@@ -8,7 +8,7 @@ const Sphere = () => {
   return (
     <div className='sphere' >
       <h1>The Sphere holds 17 Continents and dozens of Islands, each with unique Races, Kingdoms and Cultures.</h1>
-      <Link to='./full-map' target="_blank" rel="noopener noreferrer">
+      <Link to='/full-map' target="_blank" rel="noopener noreferrer">
       <motion.img src={fullMap} alt="Map of the Sphere"
          variants={fadeIn('up', 0.4)}
                   initial="hidden"

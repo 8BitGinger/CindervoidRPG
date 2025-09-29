@@ -5,6 +5,7 @@ import { fadeIn } from '../Utils/variants';
 import { TypeAnimation } from 'react-type-animation';
 import VideoWelcomeModal from '../components/VideoWelcomeModal';
 import myVideoUrl from '../assets/videos/CindervoidTeaser.mp4'
+import {Link} from 'react-router-dom';
 
 
 
@@ -41,7 +42,7 @@ const Home = () => {
         />
       </div>
       <button className='home-button'>
-        <a  href="./about">Get Started!</a>
+        <Link to="./about">Get Started!</Link>
       </button>
             <VideoWelcomeModal videoUrl={myVideoUrl} />
 
