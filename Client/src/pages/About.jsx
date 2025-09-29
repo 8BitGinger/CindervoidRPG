@@ -1,5 +1,5 @@
 import React from 'react'
-
+import {Link} from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../Utils/variants';
 
@@ -23,7 +23,7 @@ const About = () => {
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ppx2Wa5c5hE?si=33--TaxccYSsVKJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       
       <button className='about-button'>
-        <a href="./contact">Want to be a player?</a>
+        <Link to="./contact">Want to be a player?</Link>
       </button>
 
       <h1>Message from the Creator</h1>
@@ -34,7 +34,7 @@ const About = () => {
             <button className='about-button'
 
       >
-        <a href="./contact">Join the Fun!</a>
+        <Link to="./contact">Join the Fun!</Link>
       </button>
 
       <h1>4 Cornerstones of a Hero</h1>
