@@ -3,8 +3,7 @@ import bannerImage from '../assets/images/Cindervoid Logo png.png';
 import { motion } from 'framer-motion';
 import { fadeIn } from '../Utils/variants';
 import { TypeAnimation } from 'react-type-animation';
-import VideoWelcomeModal from '../components/VideoWelcomeModal';
-import myVideoUrl from '../assets/videos/CindervoidTeaser.mp4'
+
 import {Link} from 'react-router-dom';
 
 
@@ -44,7 +43,6 @@ const Home = () => {
       <button className='home-button'>
         <Link to="/about">Get Started!</Link>
       </button>
-            <VideoWelcomeModal videoUrl={myVideoUrl} />
 
     </header>
   )
