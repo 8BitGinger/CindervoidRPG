@@ -5,11 +5,11 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.95);
+  background-color: rgba(0, 0, 0, 0.95) !important;
 
   
   /* Dark, semi-transparent background */
-  z-index: 1000; /* Ensure it's on top of everything */
+  z-index: 99999; /* Ensure it's on top of everything */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -29,7 +29,7 @@
 .fullscreen-video {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* Ensures the video is visible without cropping, use 'cover' to fill the screen */
+   object-fit: contain;  /* Ensures the video is visible without cropping, use 'cover' to fill the screen */
 }
 
 /* Close Button: Positioned on top of the video */
