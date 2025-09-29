@@ -23,7 +23,7 @@ const About = () => {
       <iframe width="560" height="315" src="https://www.youtube.com/embed/ppx2Wa5c5hE?si=33--TaxccYSsVKJZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       
       <button className='about-button'>
-        <Link to="./contact">Want to be a player?</Link>
+        <Link to="./sphere">Explore the Sphere</Link>
       </button>
 
       <h1>Message from the Creator</h1>
