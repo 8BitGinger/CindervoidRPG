@@ -7,6 +7,7 @@ import fullMap from '../assets/images/fullMap.jpg';
 const Sphere = () => {
   return (
     <div className='sphere' >
+      <div className="spacer"></div>
       <h1>The Sphere holds 17 Continents and dozens of Islands, each with unique Races, Kingdoms and Cultures.</h1>
       <Link to='/full-map' target="_blank" rel="noopener noreferrer">
       <img src={fullMap} alt="Map of the Sphere"

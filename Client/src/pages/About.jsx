@@ -8,6 +8,7 @@ const About = () => {
     <section className="about"
 
     >
+      <div className="spacer"></div>
       <h1>About Cindervoid</h1>
 
 

@@ -30,22 +30,24 @@
 .contact {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
   height: 100vh;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.685);
   
-  overflow: scroll;
   align-items: center;
 }
 
 .contact-form {
-  border: none;
-  max-width: 90%;
+  border: dodgerblue 2px solid;
+  width: 90%;
+  margin: auto;
   height: 70vh;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   background-color: white;
-  z-index: 6;
+  margin-top: 20px;
+  
 }
 
 .type {
@@ -58,6 +60,11 @@
   max-width: 70%;
   height: 30%;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.spacer {
+  height: 60px;
+  width: 100%;
 }
 
 .home button, .about button, .sphere button, .contact button {
@@ -263,6 +270,9 @@
 
 
 @media (min-width: 750px) {
+  .spacer {
+    display: none;
+  }
   .about-divider {
     display: flex;
     flex-direction: row;
