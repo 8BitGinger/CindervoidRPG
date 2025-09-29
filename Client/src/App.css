@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Grenze Gotisch', serif;
+}
+
+.wallpaper {
+  background: url('./assets/images/beginYourAdventure.JPG') no-repeat bottom fixed;
+  background-size: cover;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  max-width: 100vw;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  filter: brightness(80%);
+  overflow: scroll;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+  background-color: rgba(255, 255, 255, 0.685);
+  margin-top: 70px;
+  overflow: scroll;
+  align-items: center;
+}
+
+.contact-form {
+  border: none;
+  max-width: 90%;
+  height: 80vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.type {
+  color: white;
+  font-size: 2.5em;
+
+  margin: auto 0;
+  margin-top: 0;
+  margin-bottom: 0px;
+  max-width: 70%;
+  height: 30%;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.home button, .about button {
+  background-color: dodgerblue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin: auto 0;
+  margin-top: -50px;
+  font-family: 'Grenze Gotisch', serif;
+}
+
+.home a, .about a {
+  color: white;
+  text-decoration: none;
+}
+
+.sphere {
+  padding: 20px;
+  max-width: 100vw;
+  margin-top: 70px;
+
+  background: #ffffffb6;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.sphere img {
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.home{
+  height: calc(100vh - 60px);
+    margin: auto;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+}
+
+.home img {
+  width: auto;
+  max-width: 90%;
+  max-height: 50%;
+  height: auto;
+  margin: auto;
+  margin-bottom: -50px;
+   animation: floatUpAndDown 6s ease-in-out alternate both infinite;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 70px;
+  padding-bottom: 60px;
+      background: #ffffffb6;
+    padding: 20px;
+    overflow: scroll;
+    max-width: 100vw;
+
+
+}
+
+.about video {
+  width: auto;
+  max-width: 95%;
+  max-height: 50%;
+  height: auto;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 60px;
+  border-radius: 12px;
+   }
+
+
+   .about p {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    margin: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    
+    font-size: 1.1em;
+    color: #161616;
+    line-height: 1.6;
+    text-wrap: wrap;
+   }
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes floatUpAndDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
