@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+
+#root {
+  max-width: 1280px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: 'Grenze Gotisch', serif;
+}
+
+body {
+  scrollbar-width: thin; /* 'auto' | 'thin' | 'none' */
+  scrollbar-color: dodgerblue #1c1c1c; /* thumb color track color */
+}
+
+
+button:focus {
+  outline: 1px solid #ffffff;
+  outline-offset: 2px;
+}
+
+button:hover {
+  background-color: #1c4064 !important;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+button:disabled, button[disabled]{
+  background-color: grey !important;
+  cursor: not-allowed !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+a:disabled, a[disabled]{
+  pointer-events: none;
+  cursor: not-allowed !important;
+  color: grey !important;
+  text-decoration: none !important;
+}
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #1c1c1c;
+  border: 1px solid dodgerblue;
+  border-radius: 20px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1c1c1c;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #ca1717;
+}

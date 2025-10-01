@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { PiCastleTurretDuotone, PiInfoDuotone, PiEnvelopeOpenDuotone } from "react-icons/pi";
 import { GiWorld } from "react-icons/gi";
+import PlayMe from './PlayMe';
+import { FaDiceD20 } from "react-icons/fa";
+
 
 import { FaHome, FaInfoCircle, FaEnvelope, FaDAndD, FaApple } from 'react-icons/fa';
 import '../assets/styles/navbar.css'; // Assuming you have a CSS file for styling
@@ -16,7 +19,7 @@ const Navbar = () => {
   }, [location.pathname]);
 
   const getIconColor = (path) => {
-    return activeIcon === path ? '#073468ff' : '#000000ff'; // Highlight color vs. default color
+    return activeIcon === path ? 'blue' : '#000000ff'; // Highlight color vs. default color
   };
 
   return (
@@ -34,11 +37,11 @@ const Navbar = () => {
           <GiWorld size={24} color={getIconColor('/sphere')} />
           <span style={{ color: getIconColor('/sphere') }}>The Sphere</span>
         </Link>
-        {/* <Link to="/how-to-play" className="nav-link">
-          <FaApple size={24} color={getIconColor('/how-to-play')} />
+        <Link to="/how-to-play" className="nav-link">
+          <FaDiceD20 size={24} color={getIconColor('/how-to-play')} />
           <span style={{ color: getIconColor('/how-to-play') }}>How To Play</span>
         </Link>
-        <Link to="/game-masters" className="nav-link">
+        {/* <Link to="/game-masters" className="nav-link">
           <FaDAndD size={24} color={getIconColor('/game-masters')} />
           <span style={{ color: getIconColor('/game-masters') }}>Game Masters</span>
         </Link> */}
@@ -46,6 +49,8 @@ const Navbar = () => {
           <PiEnvelopeOpenDuotone size={24} color={getIconColor('/contact')} />
           <span style={{ color: getIconColor('/contact') }}>Contact</span>
         </Link>
+
+        <PlayMe />
       </div>
     </nav>
   );

@@ -1,13 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
 
-
-#root {
-  max-width: 1280px;
-  margin: 0;
-  padding: 0;
-  text-align: center;
-  font-family: 'Grenze Gotisch', serif;
-}
 
 .wallpaper {
   background: url('./assets/images/beginYourAdventure.JPG') no-repeat bottom fixed;
@@ -23,8 +14,8 @@
   padding: 0;
   z-index: -1;
   filter: brightness(80%);
-  overflow: scroll;
-  overflow-x: hidden;
+  
+  
 }
 
 .contact {
@@ -60,6 +51,11 @@
   max-width: 70%;
   height: 30%;
   text-shadow: 2px 2px 4px #000000;
+}
+
+.scrollable-content-area {
+  height: calc(100vh - 50px); /* Example height */
+  overflow-y: scroll; /* <--- The scrollbar is here! */
 }
 
 .spacer {
@@ -100,7 +96,20 @@
 .sphere img {
   border-radius: 12px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+
+    width: 90%;
+  height: auto;
+  margin: auto;
   margin-bottom: 20px;
+
+}
+
+.sphere img:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  border: 2px solid #eb0f0f;
 }
 
 
@@ -117,7 +126,7 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-.home{
+.home {
   height: calc(100vh - 60px);
     margin: auto;
   min-height: 80vh;
@@ -126,7 +135,10 @@
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+
 }
+
+
 
 .home img {
   width: auto;
@@ -135,7 +147,7 @@
   height: auto;
   margin: auto;
   margin-bottom: -50px;
-   animation: floatUpAndDown 6s ease-in-out alternate both infinite;
+   animation: floatUpAndDownAndGrow 6s ease-in-out alternate both infinite;
 }
 
 .about {
@@ -150,16 +162,23 @@
     padding: 20px;
     overflow: scroll;
     max-width: 100vw;
-
-
+    min-height: calc(100vh - 60px);
+  
 }
 
-.sphere img {
+.vid-box {
   width: 90%;
-  height: auto;
   margin: auto;
   margin-bottom: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+
+
 
 .sphere h1 {
   font-size: 1.5em;
@@ -172,6 +191,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .sphere p {
@@ -186,15 +206,39 @@
 
 .sphere button {
   margin: auto;
-  display: block;
-  width: 40%;
+  
+  width: 250px;
+  max-width: 40%;
+
 }
+
+.footer {
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 0.8em;
+  color: #666;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: 'Lora', serif !important;
+  height: 35px;
+  background-color: rgba(71, 186, 253, 0.856);
+  margin-top: 0;
+  z-index: -1;
+}
+
 
 .about button {
   margin: auto;
 }
 
-.about iframe {
+.about iframe, .sphere iframe {
   background-color: #000000;
   width: auto;
   max-width: 95%;
@@ -222,6 +266,21 @@
     line-height: 1.6;
     text-wrap: wrap;
    }
+
+   .playIcon {
+    display: none;
+   }
+
+     .about img {
+    width: 600px;
+    height: auto;
+    max-width: 70%;
+    height: auto;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
 
 
 @keyframes logo-spin {
@@ -254,6 +313,18 @@
   }
 }
 
+@keyframes floatUpAndDownAndGrow {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.5);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;
@@ -273,6 +344,11 @@
   .spacer {
     display: none;
   }
+
+  .spacer-large{
+    height: 150px;
+    width: 100%;
+  }
   .about-divider {
     display: flex;
     flex-direction: row;
@@ -282,7 +358,7 @@
     justify-content: center;
   }
 
-  .about iframe {
+  .about iframe, .sphere iframe {
     width: 500px;
     max-width: 90%;
      height: 300px;
@@ -292,7 +368,9 @@
   }
 
   .sphere img {
-    width: 70%;
+    width: 500px;
+    height: auto;
+    max-width: 70%;
     height: auto;
   }
   .about {
@@ -300,8 +378,25 @@
     margin: auto;
     margin-top: 70px;
   }
-  h1 {
-    font-size: 3em;
+
+
+
+
+h1 {
+    font-size: 2.8em !important;
+    margin-bottom: 0.5em;
+    color: #161616;
+    width: 90%;
+    background-color: #ffffffb6;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+   outline: 1px solid #808080;
+  }
+
+  h2 {
+    font-size: 2.3em;
     margin-bottom: 0.5em;
     color: #161616;
   }
@@ -321,9 +416,7 @@
     margin-top: 70px;
   }
 
-  .sphere h1 {
-    font-size: 2em;
-  }
+
 
   .sphere p {
     font-size: 1.8em;
@@ -331,7 +424,9 @@
   }
 
   .about button {
+    margin: auto;
     margin-top: 10px;
+
   }
 
   .contact-form {
@@ -339,6 +434,7 @@
     margin-top: 150px;
     width: fit-content;
     min-width: 700px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   }
 
   .intro-type {
@@ -360,4 +456,29 @@
   .contact-button {
     display: none;
   }
+
+  .twin-buttons {
+    margin: auto;
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .playIcon {
+    display: flex;
+
+  color: dodgerblue !important;
+  font-size: 45px !important;
+  margin: auto;
+   }
+
+   .playIcon:hover {
+    color: #bd2b07 !important;
+    transform: scale(1.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+    animation: logo-spin 5s linear infinite;
+   }
+
 }
