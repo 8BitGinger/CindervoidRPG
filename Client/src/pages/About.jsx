@@ -39,7 +39,7 @@ const About = () => {
             <button className='about-button'
 
       >
-        <Link to="/contact">Join the Fun!</Link>
+        <a href="https://www.gumshoerpg.com">Check out my other Game!</a>
       </button>
       </div>
      
