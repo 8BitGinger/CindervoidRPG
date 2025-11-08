@@ -1,14 +1,14 @@
 import { VidBoxButton, VidBox } from '../components/VidBox';
 import { Link } from 'react-router-dom';
 
-import charSheet from '../assets/docs/charSheet.pdf';
-import qcc from '../assets/docs/qcc.pdf';
-import sparkCodex from '../assets/docs/sparkCodex.pdf';
+import charSheet from '../assets/Docs/charSheet.pdf';
+import qcc from '../assets/Docs/qcc.pdf';
+import sparkCodex from '../assets/Docs/sparkCodex.pdf';
 
-import harmonizer from '../assets/docs/HarmonizerV3.pdf';
-import adamant from '../assets/docs/AdamantV3.pdf';
-import luminary from '../assets/docs/LuminaryV3.pdf';
-import omen from '../assets/docs/OmenV3.pdf';
+import harmonizer from '../assets/Docs/HarmonizerV3.pdf';
+import adamant from '../assets/Docs/AdamantV3.pdf';
+import luminary from '../assets/Docs/LuminaryV3.pdf';
+import omen from '../assets/Docs/OmenV3.pdf';
 
 const HowToPlay = () => {
   return (
