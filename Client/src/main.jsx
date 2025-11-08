@@ -9,7 +9,6 @@ import Sphere from './pages/Sphere.jsx';
 import HowToPlay from './pages/HowToPlay.jsx';
 import GameMasters from './pages/GameMasters.jsx';
 import Contact from './pages/Contact.jsx';
-import FullMap from './pages/FullMap.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,10 +40,7 @@ const router = createBrowserRouter([
         path: '/contact',
         element: <Contact />,
       },
-      {
-        path: '/full-map',
-        element: <FullMap />,
-      },
+
 
     ],
   },

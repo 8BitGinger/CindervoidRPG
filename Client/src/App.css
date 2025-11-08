@@ -178,6 +178,22 @@
   justify-content: center;
 }
 
+.flame-vnull-logo {
+  border-radius: 50% !important;
+}
+
+.download a {
+  display: block;
+  margin: auto;
+  font-size: 2em;
+  color: rgb(14, 63, 112);
+  text-decoration: none;
+}
+
+.download a:hover {
+  text-decoration: underline;
+  color: dodgerblue;
+}
 
 
 .sphere h1 {

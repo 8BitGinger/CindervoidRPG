@@ -1,6 +1,15 @@
 import { VidBoxButton, VidBox } from '../components/VidBox';
 import { Link } from 'react-router-dom';
 
+import charSheet from '../assets/docs/charSheet.pdf';
+import qcc from '../assets/docs/qcc.pdf';
+import sparkCodex from '../assets/docs/sparkCodex.pdf';
+
+import harmonizer from '../assets/docs/HarmonizerV3.pdf';
+import adamant from '../assets/docs/AdamantV3.pdf';
+import luminary from '../assets/docs/LuminaryV3.pdf';
+import omen from '../assets/docs/OmenV3.pdf';
+
 const HowToPlay = () => {
   return (
     <div className='about how-to-play'>
@@ -41,9 +50,25 @@ const HowToPlay = () => {
       videoSrc='https://www.youtube.com/embed/KQ7Ki5f2eTU?si=QWtzYU1sZCjqO5s8' />
 
     <h1>Downloads & Resources</h1>
-    <p>Comming Soon!</p>
+    <div className="download">
     <br />
-    <a href='../assets/Docs/Cindervoid Char Sheet 1.6.pdf' target='_download'>Digital Character Builder</a>
+    <a href={charSheet} target='_download'>Character Sheet (1.7)</a>
+    <br />
+    <a href={sparkCodex} target='_download'>Spark Codex</a>
+     <br />
+    <a href={qcc} target='_download'>Quick Character Compendium</a>
+</div>
+<h2>Essence Sheets</h2>
+    <div className="download">
+    <br />
+    <a href={harmonizer} target='_download'>Harmonizer</a>
+    <br />
+    <a href={adamant} target='_download'>Adamant</a>
+     <br />
+    <a href={luminary} target='_download'>Luminary</a>
+    <br />
+    <a href={omen} target='_download'>Omen</a>
+</div>
     <br />
     <button className='btn'><Link to='/'>Back Home</Link></button>
 
