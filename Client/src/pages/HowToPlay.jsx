@@ -1,7 +1,7 @@
 import { VidBoxButton, VidBox } from '../components/VidBox';
 import { Link } from 'react-router-dom';
 
-import charSheet from '../assets/Docs/charSheet.pdf';
+import charSheet from '../assets/Docs/charSheet1.pdf';
 import qcc from '../assets/Docs/qcc.pdf';
 import sparkCodex from '../assets/Docs/sparkCodex.pdf';
 
@@ -52,7 +52,7 @@ const HowToPlay = () => {
     <h1>Downloads & Resources</h1>
     <div className="download">
     <br />
-    <a href={charSheet} target='_download'>Character Sheet (1.7)</a>
+    <a href={charSheet} target='_download'>Character Sheet (1.8)</a>
     <br />
     <a href={sparkCodex} target='_download'>Spark Codex</a>
      <br />
