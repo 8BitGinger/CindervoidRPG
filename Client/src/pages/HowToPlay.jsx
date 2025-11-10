@@ -5,10 +5,10 @@ import charSheet from '../assets/Docs/charSheet1.pdf';
 import qcc from '../assets/Docs/qcc.pdf';
 import sparkCodex from '../assets/Docs/sparkCodex.pdf';
 
-import harmonizer from '../assets/Docs/HarmonizerV3.pdf';
-import adamant from '../assets/Docs/AdamantV3.pdf';
-import luminary from '../assets/Docs/LuminaryV3.pdf';
-import omen from '../assets/Docs/OmenV3.pdf';
+import harmonizer from '../assets/Docs/HarmonizerV4.pdf';
+import adamant from '../assets/Docs/AdamantV4.pdf';
+import luminary from '../assets/Docs/LuminaryV4.pdf';
+import omen from '../assets/Docs/OmenV4.pdf';
 
 const HowToPlay = () => {
   return (
