@@ -41,6 +41,7 @@ const HowToPlay = () => {
       heading='Attunements'
       videoSrc='https://www.youtube.com/embed/oxJh1uzLe4U?si=8tb0y_qCfoxD7Ze6' />
 
+    <Link class='link' to='https://characterbuilder-zeta.vercel.app/' target='_blank'>Try the Character Creator</Link>
     </div>
               <h1>Tips and Tricks</h1>
 
